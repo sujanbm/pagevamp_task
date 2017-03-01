@@ -1,7 +1,9 @@
 <?php
-include 'Classes/DB.php';
-include 'Classes/User.php';
-$users = (new User())->getAll();
+
+
+include 'vendor/autoload.php';
+$users = (new Classes\User())->getAll();
+
 ?>
 
 <html>
@@ -19,7 +21,7 @@ $users = (new User())->getAll();
                 <th>Last Name</th>
                 <th>Email</th>
             </tr>
-            <?php foreach ($users as $user ): ?>
+            <?php foreach ($users as $user): ?>
                 <tr>
                     <td><?php echo $user->getFirstName(); ?></td>
                     <td><?php echo $user->getLastName(); ?></td>

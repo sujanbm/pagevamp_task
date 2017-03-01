@@ -1,14 +1,16 @@
 <?php
 
-abstract class DB {
+namespace Classes;
 
-    const DB = 'pagevamp_test';
+abstract class DB
+{
+    const DB = 'pagevamp_task';
     const PASSWORD = 'root';
     const USERNAME = 'root';
-    const HOST = 'localhost';
+    const HOST = '172.17.0.2';
 
-    function __construct()
+    public function __construct()
     {
-        $this->db = mysqli_connect( self::HOST, self::USERNAME, self::PASSWORD, self::DB );
+        $this->db = mysqli_connect(self::HOST, self::USERNAME, self::PASSWORD, self::DB);
     }
 }

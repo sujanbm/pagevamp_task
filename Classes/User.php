@@ -1,7 +1,9 @@
 <?php
 
-class User extends DB {
-    
+namespace Classes;
+
+class User extends DB
+{
     private $firstName;
     private $lastName;
     private $email;
@@ -54,25 +56,25 @@ class User extends DB {
         $this->email = $email;
     }
 
-    function insert(){
-
+    public function insert()
+    {
         $query = "insert into users(email,first_name, last_name) 
             values(
-            '". $this->getEmail()."',
-            '". $this->getFirstName()."',
-            '". $this->getLastName()."'
+            '".$this->getEmail()."',
+            '".$this->getFirstName()."',
+            '".$this->getLastName()."'
             )";
 
         return mysqli_query($this->db, $query);
     }
 
-    function getAll() {
-
-        $query = "select * from users";
+    public function getAll()
+    {
+        $query = 'select * from users';
         $result = mysqli_query($this->db, $query);
         $users = [];
-        if(mysqli_num_rows($result) > 0){
-            while ($user = mysqli_fetch_assoc($result)){
+        if (mysqli_num_rows($result) > 0) {
+            while ($user = mysqli_fetch_assoc($result)) {
                 $thisUser = new self();
                 $thisUser->setFirstName($user['first_name']);
                 $thisUser->setLastName($user['last_name']);
@@ -80,10 +82,7 @@ class User extends DB {
                 $users[] = $thisUser;
             }
         }
+
         return $users;
-
-
-
     }
-
 }

@@ -4,13 +4,14 @@ We are looking for interns that can grow with us. We are strong believers of Obj
   
 ### Test
 
-We have devised a test to check you extent of knowledge in OOP. We have added code required to make a CRUD application.  
-You will need to add few features to this.
+We have devised a task to check you extent of knowledge in OOP. 
+We have added code required to make a CRUD(Create, Read, Update and Delete) application. You will need to add few features to this.
 
 ### Setup
 
-* `git clone `
-* Create a database named `pagevamp_test`
+* `git clone https://github.com/pagevamp/php-intern-task.git`
+* `cd php-intern-task && composer install`
+* Create a database named `pagevamp_task`
 * Change the credentials of your database in `Classes/DB.php` to connect to mysql
 * Create a table `users` with columns `id`, `first_name`, `last_name` and `email`.
 * Either create a virtual host or go to `localhost/php-intern-task` in your browser
