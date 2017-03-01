@@ -20,7 +20,7 @@ You will need to add few features to this.
 We have completed the add and list user part. You need to
 
 * Add relevant buttons everywhere. for example: add user button in user list page
-* Add Edit and Delete button on the side User list page(`list.php`)
+* Add Edit and Delete button on the right of `Email` column.
 * Create an edit page where user can edit the user they selected
 * Create delete functionality
 
@@ -28,7 +28,6 @@ We have completed the add and list user part. You need to
 
 * Attributes firstName, lastName and email in User.php are private, What does that mean?
 * Class DB is an abstract class. What does that mean? and why do you think it is used?
-* 
 
 ### For bonus points
 * Add validation to the form (client side and server side)
