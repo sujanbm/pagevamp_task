@@ -5,9 +5,9 @@ namespace Classes;
 abstract class DB
 {
     const DB = 'pagevamp_task';
-    const PASSWORD = 'root';
+    const PASSWORD = '';
     const USERNAME = 'root';
-    const HOST = '172.17.0.2';
+    const HOST = '127.0.0.1';
 
     public function __construct()
     {
