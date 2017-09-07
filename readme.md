@@ -1,6 +1,3 @@
-## Pagevamp PHP Intern Task
-
-
 ### Setup
 
 * `git clone https://github.com/pagevamp/php-intern-task.git`
